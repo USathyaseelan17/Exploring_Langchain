@@ -1,0 +1,21 @@
+[project]
+name = "exploring-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sathyaseelan", email = "sathyaseelancoc@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-openrouter>=0.2.9",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+exploring-ai = "exploring_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
